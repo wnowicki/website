@@ -16,8 +16,8 @@ heading_image: blog.jpg
     <ul class="list-group">
     {% for post in tag[1] %}
     <li class="list-group-item">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <a href="/blog/categories#{{ post.categories|first }}" class="badge">{{ post.categories|first|capitalize }}</a>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a href="{{ site.baseurl }}/blog/categories#{{ post.categories|first }}" class="badge">{{ post.categories|first|capitalize }}</a>
     </li>
     {% endfor %}
     </ul>

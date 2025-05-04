@@ -16,9 +16,9 @@ heading_image: blog.jpg
     {% endif %}
 
     <li>
-        <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a><small> on {{ post.date|date_to_string }} in <a href="/blog/categories#{{ post.categories| first }}">{{ post.categories| first | capitalize}}</a></small>
+        <a href="{{ post.url | prepend: site.baseurl }}"><strong>{{ post.title }}</strong></a><small> on {{ post.date|date_to_string }} in <a href="{{ site.baseurl }}/blog/categories#{{ post.categories| first }}">{{ post.categories| first | capitalize}}</a></small>
         {% if post.language %}
-        <img src="/assets/flags/blank.gif" class="flag flag-{{ site.languages[post.language].flag }}" alt="{{ site.languages[post.language].name }}" />
+        <img src="{{ site.baseurl }}/assets/flags/blank.gif" class="flag flag-{{ site.languages[post.language].flag }}" alt="{{ site.languages[post.language].name }}" />
         {% endif %}
     </li>
 

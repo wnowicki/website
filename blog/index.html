@@ -8,7 +8,7 @@ heading_image: blog.jpg
 
 {% for post in paginator.posts %}
     <div class="post-preview">
-        <a href="{{ post.url }}">
+        <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             <h2 class="post-title">
                 {{ post.title }}
             </h2>
@@ -45,6 +45,6 @@ heading_image: blog.jpg
 
 <div>
   <p>
-  List by <a href="/blog/tags">tags</a> and <a href="/blog/categories">categories</a>.
+  List by <a href="{{ site.baseurl }}/blog/tags">tags</a> and <a href="{{ site.baseurl }}/blog/categories">categories</a>.
   </p>
 </div>
