@@ -21,15 +21,15 @@
     {%- capture page_image %}
     {%- if page.layout == "post" -%}
       {%- if page.heading_image -%}
-      {{ site.url }}/assets/img/post-bg/{{ page.heading_image }}
+      {{ site.url }}{{ site.baseurl }}/assets/img/post-bg/{{ page.heading_image }}
       {%- else -%}
-      {{ site.url }}/assets/img/bg/blog.jpg
+      {{ site.url }}{{ site.baseurl }}/assets/img/bg/blog.jpg
       {%- endif -%}
     {%- else -%}
       {%- if page.heading_image -%}
-      {{ site.url }}/assets/img/bg/{{ page.heading_image }}
+      {{ site.url }}{{ site.baseurl }}/assets/img/bg/{{ page.heading_image }}
       {%- else -%}
-      {{ site.url }}/assets/img/bg/main.jpg
+      {{ site.url }}{{ site.baseurl }}/assets/img/bg/main.jpg
       {%- endif -%}
     {%- endif -%}
     {%- endcapture %}
@@ -40,16 +40,16 @@
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
 
     <!-- Bootstrap Core CSS -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/assets/css/clean-blog.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/clean-blog.css" rel="stylesheet">
 
-    <link href="/assets/css/syntax.css" rel="stylesheet">
-    <link href="/assets/flags/flags.min.css" rel=stylesheet type="text/css">
+    <link href="{{ site.baseurl }}/assets/css/syntax.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/flags/flags.min.css" rel=stylesheet type="text/css">
 
     <!-- Custom Fonts -->
     <script src="https://kit.fontawesome.com/370a0cb679.js" crossorigin="anonymous"></script>

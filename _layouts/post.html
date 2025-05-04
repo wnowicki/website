@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- Post Header -->
-<header class="intro-header" style="background-image: url('/assets/img/post-bg/{% if page.heading_image %}{{page.heading_image}}{% else %}default.jpg{% endif %}')">
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/assets/img/post-bg/{% if page.heading_image %}{{page.heading_image}}{% else %}default.jpg{% endif %}')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -31,12 +31,12 @@ layout: default
                 {{ content }}
 
                 <hr>
-                <ul class="list-inline"><li>Category:</li><li><a href="/blog/categories#{{ page.categories | first }}"><strong>{{ page.categories | first | capitalize }}</strong></a></li></ul>
+                <ul class="list-inline"><li>Category:</li><li><a href="{{ site.baseurl }}/blog/categories#{{ page.categories | first }}"><strong>{{ page.categories | first | capitalize }}</strong></a></li></ul>
                 {% if page.tags.size > 0 %}
                 <ul class="list-inline">
                     <li>Tags:</li>
                     {% for tag in page.tags %}
-                        <li><span class="label label-default"><a href="/blog/tags#{{ tag }}">#{{ tag }} ({{ site.tags[tag]|size  }})</a></span></li>
+                        <li><span class="label label-default"><a href="{{ site.baseurl }}/blog/tags#{{ tag }}">#{{ tag }} ({{ site.tags[tag]|size  }})</a></span></li>
                         <!-- <li><a href="/blog/tags#{{ tag }}" class="btn btn-default btn-xs">{{ tag }} <span class="badge">{{ site.tags[tag]|size  }}</span></a></li> -->
                     {% endfor %}
                 </ul>

@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
             </button>
             {% if page.url != "/" %}
-                <a class="navbar-brand" href="/">Wojciech Nowicki</a>
+                <a class="navbar-brand" href="{{ site.baseurl }}/">Wojciech Nowicki</a>
             {% endif %}
         </div>
 
@@ -21,16 +21,16 @@
                     <a href="/">Home</a>
                 </li> -->
                 <li>
-                    <a href="/about">About</a>
+                    <a href="{{ site.baseurl }}/about">About</a>
                 </li>
                 <li>
-                    <a href="/projects">Projects</a>
+                    <a href="{{ site.baseurl }}/projects">Projects</a>
                 </li>
                 <li>
-                    <a href="/blog">Blog</a>
+                    <a href="{{ site.baseurl }}/blog">Blog</a>
                 </li>
                 <li>
-                    <a href="/contact">Contact</a>
+                    <a href="{{ site.baseurl }}/contact">Contact</a>
                 </li>
             </ul>
         </div>
