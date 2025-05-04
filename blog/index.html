@@ -19,9 +19,9 @@ heading_image: blog.jpg
             {% endif %}
         </a>
         <p class="post-meta">
-            Posted by <a href="/about">{{ post.author }}</a> on {{ post.date|date_to_string }} in <a href="/blog/categories#{{ post.categories| first }}">{{ post.categories| first | capitalize}}</a>
+            Posted by <a href="{{ site.baseurl }}/about">{{ post.author }}</a> on {{ post.date|date_to_string }} in <a href="/blog/categories#{{ post.categories| first }}">{{ post.categories| first | capitalize}}</a>
             {% if post.language %}
-             <img src="/assets/flags/blank.gif" class="flag flag-{{ site.languages[post.language].flag }}" alt="{{ site.languages[post.language].name }}" />
+             <img src="{{ site.baseurl }}/assets/flags/blank.gif" class="flag flag-{{ site.languages[post.language].flag }}" alt="{{ site.languages[post.language].name }}" />
             {% endif %}
         </p>
     </div>
