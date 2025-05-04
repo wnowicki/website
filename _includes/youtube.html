@@ -1,0 +1,16 @@
+{% if include.id %}
+<iframe width="750" height="422" class="hidden-xs" src="https://www.youtube.com/embed/{{ include.id }}?rel=0" frameborder="0" allowfullscreen></iframe>
+<div class="well visible-xs">
+    <a href="https://youtu.be/{{ page.youtube.id }}" title="Obejżyj na YouTube">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+        </span>
+        {% if include.title %}
+        {{ include.title }}
+        {% else %}
+        YouTube
+        {% endif %}
+    </a>
+</div>
+{% endif %}

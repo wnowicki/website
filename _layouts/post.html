@@ -1,0 +1,89 @@
+---
+layout: default
+---
+
+<!-- Post Header -->
+<header class="intro-header" style="background-image: url('/assets/img/post-bg/{% if page.heading_image %}{{page.heading_image}}{% else %}default.jpg{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>{{ page.title }}</h1>
+                    {% if page.subtitle %}
+                    <h2 class="subheading">{{ page.subtitle }}</h2>
+                    {% endif %}
+                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}unknown author{% endif %} on {{ page.date | date: "%B %-d, %Y" }} in {{ page.categories| first | capitalize}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {% if page.youtube.id %}
+                    <h2>{{ page.youtube.title }}</h2>
+                    {% include youtube.html id=page.youtube.id title=page.youtube.title %}
+                {% endif %}
+                {{ content }}
+
+                <hr>
+                <ul class="list-inline"><li>Category:</li><li><a href="/blog/categories#{{ page.categories | first }}"><strong>{{ page.categories | first | capitalize }}</strong></a></li></ul>
+                {% if page.tags.size > 0 %}
+                <ul class="list-inline">
+                    <li>Tags:</li>
+                    {% for tag in page.tags %}
+                        <li><span class="label label-default"><a href="/blog/tags#{{ tag }}">#{{ tag }} ({{ site.tags[tag]|size  }})</a></span></li>
+                        <!-- <li><a href="/blog/tags#{{ tag }}" class="btn btn-default btn-xs">{{ tag }} <span class="badge">{{ site.tags[tag]|size  }}</span></a></li> -->
+                    {% endfor %}
+                </ul>
+                {% endif %}
+
+                <ul class="pager hidden-print">
+                    {% if page.previous.url %}
+                    <li class="previous">
+                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+                    </li>
+                    {% endif %}
+                    {% if page.next.url %}
+                    <li class="next">
+                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+                    </li>
+                    {% endif %}
+                </ul>
+
+            </div>
+
+            {% if page.post_id and jekyll.environment == "production" %}
+            <!-- Comments -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'wojciechnowicki';
+                    var disqus_identifier = '{{page.post_id}}';
+                    var disqus_title = '{{page.title}}';
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+            {% else %}
+            <div class="well col-sm-12">
+                NOTE!</br>
+                Comments suspended as this is not production environment!
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</article>
+
+<hr>
