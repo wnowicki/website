@@ -1,0 +1,50 @@
+---
+layout: page
+title: Blog - Wojciech Nowicki
+heading: Blog
+subheading: My humble binary thoughts
+heading_image: blog.jpg
+---
+
+{% for post in paginator.posts %}
+    <div class="post-preview">
+        <a href="{{ post.url }}">
+            <h2 class="post-title">
+                {{ post.title }}
+            </h2>
+            {% if post.subtitle %}
+            <h3 class="post-subtitle">
+                {{ post.subtitle}}
+            </h3>
+            {% endif %}
+        </a>
+        <p class="post-meta">
+            Posted by <a href="/about">{{ post.author }}</a> on {{ post.date|date_to_string }} in <a href="/blog/categories#{{ post.categories| first }}">{{ post.categories| first | capitalize}}</a>
+            {% if post.language %}
+             <img src="/assets/flags/blank.gif" class="flag flag-{{ site.languages[post.language].flag }}" alt="{{ site.languages[post.language].name }}" />
+            {% endif %}
+        </p>
+    </div>
+    <hr>
+{% endfor %}
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
+
+<div>
+  <p>
+  List by <a href="/blog/tags">tags</a> and <a href="/blog/categories">categories</a>.
+  </p>
+</div>

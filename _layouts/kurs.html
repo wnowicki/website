@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<!-- Post Header -->
+<header class="intro-header" style="background-image: url('/assets/img/bg/{% if page.heading_image %}{{page.heading_image}}{% else %}default.jpg{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>{{ page.heading }}</h1>
+                    {% if page.subheading %}
+                    <h2 class="subheading">{{ page.subheading }}</h2>
+                    {% endif %}
+                    <span class="meta">Poziom: {{ page.kurs.poziom }}</br>Część: {{ page.kurs.czesc }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {% if page.youtube.id %}
+                    {% include youtube.html id=page.youtube.id title=page.youtube.title %}
+                {% endif %}
+                {{ content }}
+                <hr>
+            </div>
+
+            {% if page.id  and jekyll.environment == "production" %}
+            <!-- Comments -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div id="disqus_thread"></div>
+                <script>
+
+                var disqus_config = function () {
+                    // this.page.url = '{{ page.url }}';  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = '{{page.id}}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    this.page.title = '{{ page.title }}';
+                };
+
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = '//phpwpraktyce.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+            {% else %}
+            <div class="well col-sm-12">
+                NOTE!</br>
+                Comments suspended as this is not production environment!
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</article>
+
+<hr>
