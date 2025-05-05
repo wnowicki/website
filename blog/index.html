@@ -23,6 +23,7 @@ heading_image: blog.jpg
             {% if post.language %}
              <img src="{{ site.baseurl }}/assets/flags/blank.gif" class="flag flag-{{ site.languages[post.language].flag }}" alt="{{ site.languages[post.language].name }}" />
             {% endif %}
+            &middot; {% include read_time.html content=post.content %}
         </p>
     </div>
     <hr>
