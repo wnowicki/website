@@ -18,6 +18,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-admin
+  - jemoji
 markdown: kramdown
 permalink: /:year/:month/:day/:title
 paginate: 5
