@@ -25,7 +25,9 @@ paginate_path: "/blog/page-:num/"
 # page_excerpts: true
 
 jekyll_admin:
-    homepage: "main"
+    homepage: "index"
+    hidden_links:
+      - datafiles
 
 # Personalisation
 social:
