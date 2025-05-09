@@ -6,12 +6,13 @@ date: "2018-09-09 17:45"
 author: wojtek
 post_id: 8b808f7667f141bab8e9def097be161b
 heading_image: 2018-09-scrum.jpg
-categories: development
+categories: 
+  - development
 language: en
 tags:
-    - agile
-    - scrum
-    - documentation
+  - agile
+  - scrum
+  - documentation
 ---
 
 [Agile](https://en.wikipedia.org/wiki/Agile_software_development) ticket flow usually sounds easy, as a dev you are getting a ticket with all business requirements defined by a product owner, business analyst etc. Then you just have to deliver it, submit it for a review, pass QA and UAT and then it finally lands in the live environment.

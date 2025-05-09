@@ -6,14 +6,15 @@ date: "2018-03-10 11:06"
 author: wojtek
 post_id: 7368d2377b894e9b8e0e447f9e28f803
 heading_image:
-categories: development
+categories: 
+  - development
 language: pl
 tags:
-    - vagrant
-    - php
-    - mysql
-    - bash
-    - sql
+  - vagrant
+  - php
+  - mysql
+  - bash
+  - sql
 ---
 
 Jakiś czas temu zrobiłem pierwszy odcinek kursu [*PHP w Praktyce*](/php) w którym to pokazałem jak zrobić własny lokalny serwer na którym możecie budować aplikacje z użyciem PHP. Sensownie jest rozpocząć taki kurs od narzędzia umożliwiającego uruchamianie wszystkiego tego o czym będzie w dalszych odcinkach. Żeby uprościć sprawę na tak zwanego maksa a dodatkowo jeszcze wprowadzać dobre standardy zamiast udostępnić serwer do pobrania z własnej strony stworzyłem repozytorium [`wpraktyce/server`](https://github.com/wpraktyce/server) z które to można sobie pobrać zrobić [fork](https://pl.wikipedia.org/wiki/Fork). Oczywiście projekt był prosty adekwatnie do potrzeb kursu. Co prawda kurs nie doczekał się jeszcze odcinka w którym potrzebowalibyśmy baz danych jednak chcąc sobie odświeżyć trochę wiedzę z zakresu `bash` postanowiłem rozszerzyć trochę funkcjonalność tego serwera. Co opisze w tym poście.  

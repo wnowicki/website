@@ -7,7 +7,7 @@ youtube:
     id: 'oCWE7UuMZyc'
     title: 'Manchester Day 2017'
 categories:
-    - default
+  - default
 tags:
-    - manchester
+  - manchester
 ---

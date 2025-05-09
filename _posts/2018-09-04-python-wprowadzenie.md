@@ -6,17 +6,18 @@ date: "2018-09-04 17:50"
 author: wojtek
 post_id: 0d4b96b2776842b5b2a8d05b78379ea7
 heading_image: 2018-09-python.png
-categories: development
+categories: 
+  - development
 language: pl
 tags:
-    - python
-    - programowanie
-    - oop
-    - aws
-    - jupyter
-    - anaconda
-    - raspberrypi
-    - kodi
+  - python
+  - programowanie
+  - oop
+  - aws
+  - jupyter
+  - anaconda
+  - raspberrypi
+  - kodi
 ---
 
 > "Kto nie idzie do przodu, ten się cofa." ~Johann Wolfgang von Goethe

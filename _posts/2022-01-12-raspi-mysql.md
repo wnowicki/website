@@ -5,14 +5,15 @@ subtitle: "Building DB server using Docker on Raspberry Pi"
 date: "2022-01-12 19:30"
 author: wojtek
 post_id: ab5155b368574a36e3fac38a826ece19
-categories: raspi
+categories: 
+  - raspi
 heading_image: 2022-01-rpi2.jpg
 language: en
 tags:
-    - raspberrypi
-    - docker
-    - mysql
-    - server
+  - raspberrypi
+  - docker
+  - mysql
+  - server
 ---
 
 In this post, I will guide you on how to install [Docker](https://www.docker.com) and set up your first container on Raspberry Pi. Docker has revolutionised the way we work with servers and the development environment.  I remember creating a video about setting up a local server based on the [Vagrant](https://www.vagrantup.com) and VirtualBox virtualisation. Today I'd say it's completely outdated, even I think Vagrant was a revolution on its own.

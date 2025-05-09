@@ -5,12 +5,13 @@ subtitle: "How to install Oh My ZSH!"
 date: "2022-01-06 17:25"
 author: wojtek
 post_id: 07206171aeb03b64a74ec69afd451526
-categories: raspi
+categories: 
+  - raspi
 heading_image: 2022-01-rpi.jpg
 language: en
 tags:
-    - raspberrypi
-    - bash
+  - raspberrypi
+  - bash
 ---
 
 Writing an introduction to [Raspberry Pi](https://www.raspberrypi.com) nowadays would be a little bit too late as the initial release was in 2012. Since that, it become really popular, not only in education which was the original purpose. But as well in some academic and commercial projects where such a small computer suits the needs.

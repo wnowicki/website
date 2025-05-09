@@ -6,12 +6,13 @@ date: "2018-06-10 21:10"
 author: wojtek
 post_id: 7e41f5cccf604941ba4ffa0f2dad4120
 heading_image: 2018-06-10.jpg
-categories: default
+categories: 
+  - default
 language: pl
 tags:
-    - recenzja
-    - google
-    - ai
+  - recenzja
+  - google
+  - ai
 ---
 
 Długie pisanie postów nie ma sensu... ten post jest tego przykładem. Należy zacząć pisać i skończyć możliwie szybko!

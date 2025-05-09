@@ -5,12 +5,13 @@ subtitle: "Jak używać kategorii na Twoim blogu opartym o Jekyll"
 date: "2018-02-24 17:56"
 author: wojtek
 post_id: ac1105e39e284ec08761643002da084c
-categories: development
+categories: 
+  - development
 language: pl
 tags:
-    - jekyll
-    - blog
-    - webdev
+  - jekyll
+  - blog
+  - webdev
 ---
 
 ## Po co są kategorie?
