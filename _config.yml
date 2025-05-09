@@ -20,6 +20,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-admin
   - jemoji
+  - jekyll-archives
+  - jekyll-redirect-from
 markdown: kramdown
 permalink: /:year/:month/:day/:title
 paginate: 5
@@ -63,6 +65,15 @@ languages:
     en:
         flag: gb
         name: English
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: archive
+  permalinks:
+    tag: '/blog/tags/:name/'
+    category: '/blog/categories/:name/'
 
 # Exclude from processing.
 # The following items will not be processed, by default.

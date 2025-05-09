@@ -7,26 +7,11 @@ heading_image: blog.jpg
 ---
 
 {% for post in paginator.posts %}
-    <div class="post-preview">
-        <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title">
-                {{ post.title }}
-            </h2>
-            {% if post.subtitle %}
-            <h3 class="post-subtitle">
-                {{ post.subtitle}}
-            </h3>
-            {% endif %}
-        </a>
-        <p class="post-meta">
-            Posted by <a href="{{ site.baseurl }}/about">{{ post.author }}</a> on {{ post.date|date_to_string }} in <a href="/blog/categories#{{ post.categories| first }}">{{ post.categories| first | capitalize}}</a>
-            {% if post.language %}
-             <img src="{{ site.baseurl }}/assets/flags/blank.gif" class="flag flag-{{ site.languages[post.language].flag }}" alt="{{ site.languages[post.language].name }}" />
-            {% endif %}
-            &middot; {% include read_time.html content=post.content %}
-        </p>
-    </div>
+  {% include post_item.html post=post %}
+
+  {% if forloop.last == false %}
     <hr>
+  {% endif %}
 {% endfor %}
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
@@ -46,6 +31,6 @@ heading_image: blog.jpg
 
 <div>
   <p>
-  List by <a href="{{ site.baseurl }}/blog/tags">tags</a> and <a href="{{ site.baseurl }}/blog/categories">categories</a>.
+  <a href="{{ site.baseurl }}/blog/archive">Blog archive</a> or list by <a href="{{ site.baseurl }}/blog/tags">tags</a> and <a href="{{ site.baseurl }}/blog/categories">categories</a>.
   </p>
 </div>
