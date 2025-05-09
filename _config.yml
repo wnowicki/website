@@ -22,6 +22,7 @@ plugins:
   - jemoji
   - jekyll-archives
   - jekyll-redirect-from
+  - jekyll-target-blank
 markdown: kramdown
 permalink: /:year/:month/:day/:title
 paginate: 5
