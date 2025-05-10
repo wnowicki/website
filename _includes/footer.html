@@ -53,7 +53,11 @@
                       </a>
                   </li>
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; WojciechNowicki.com 2013-{{ site.time | date: '%Y'}}, <a href="{{ site.baseurl }}/credits">credits</a></p>
+                <p class="copyright text-muted">
+                  Copyright &copy; WojciechNowicki.com 2013-{{ site.time | date: '%Y'}},
+                  <a href="{{ site.baseurl }}/credits">credits</a>
+                  [{% project_version commit short %}]
+                </p>
             </div>
         </div>
     </div>
