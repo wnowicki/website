@@ -76,6 +76,17 @@ jekyll-archives:
     tag: '/blog/tags/:name/'
     category: '/blog/categories/:name/'
 
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      subtitle:
+      post_id:
+      author:
+      categories:
+      heading_image:
+      language:
+      tags:
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
