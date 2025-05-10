@@ -7,7 +7,7 @@ author: wojtek
 post_id: 9984d1c688a54de88248147baacc71fa
 heading_image: 2018-02-26-tab.jpg
 categories: 
- - default
+  - default
 language: pl
 tags:
   - samsung
