@@ -1,18 +1,19 @@
 ---
-layout: "post"
-title: "Sense Racing"
-subtitle: "Sense HAT based Racing game"
-date: "2024-04-02 17:10"
+title: Sense Racing
+layout: post
+subtitle: Sense HAT based Racing game
+date: 2024-04-02 17:10
 author: wojtek
-post_id: 026513190db7cdcc244d9d7376eb964a
-categories: raspi
+post_id: '026513190db7cdcc244d9d7376eb964a'
+categories:
+  - raspi
 heading_image: 2024-04-02.jpg
 language: en
 tags:
-    - raspberrypi
-    - sensehat
-    - game
-    - development
+  - raspberrypi
+  - sensehat
+  - game
+  - development
 ---
 
 In the previous post [Sense HAT introduction](/2022/06/21/sense-hat) we started implementing a simple racing game in Phyton for RapberryPi Sense HAT. We made most of the base code and managed to get the track moving now it's time to add a car, obstacles and some logic.

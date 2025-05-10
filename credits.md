@@ -14,7 +14,7 @@ permalink: /credits/
 ## Engine
 
 - [Jekyll](http://jekyllrb.com/) - "A simple, blog-aware, static site generator"
-- Deployment by GitHub Pages
+- Hosted on GitHub [wnowicki/website](https://github.com/wnowicki/website)
 
 ## Assets
 
@@ -33,4 +33,9 @@ On [CC License](https://creativecommons.org/)
 - Post: [Keyboard](https://www.flickr.com/photos/jeroenbennink/3382865257)
 - Projects: [The Fibonacci Notes](https://www.flickr.com/photos/gdvan/14910785913)
 
-`Site generated: {{ site.time | date: "%H:%M %d.%m.%Y "}}`
+```plain
+Build: {% project_version commit long %}
+Site generated: {{ site.time | date: "%H:%M %d.%m.%Y "}}
+```
+
+Version [{% project_version commit short %}](https://github.com/wnowicki/website/commit/{% project_version commit long %})

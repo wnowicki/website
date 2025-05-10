@@ -8,8 +8,8 @@ youtube:
     title: 'Czy PHP jest językiem programowania?'
 language: pl
 categories:
-    - vlog
+  - vlog
 tags:
-    - programowanie
-    - php
+  - programowanie
+  - php
 ---

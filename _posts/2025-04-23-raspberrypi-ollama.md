@@ -1,22 +1,23 @@
 ---
-layout: "post"
-title: "Jak uruchomić własny chat AI?"
-subtitle: "Instalacja Ollama na Raspberry Pi"
-date: "2025-04-23 19:10"
+title: Jak uruchomić własny chat AI?
+layout: post
+subtitle: Instalacja Ollama na Raspberry Pi
+date: 2025-04-23 19:10
 author: wojtek
 post_id: 0456b027799f8b67bd133ddb9acdb4db
-categories: raspi
+categories:
+- raspi
 heading_image: 2025-04-23.jpg
 language: pl
 tags:
-    - ai
-    - llm
-    - docker
-    - raspberrypi
-    - development
-    - homelab
-    - ollama
-    - openwebui
+- ai
+- llm
+- docker
+- raspberrypi
+- development
+- homelab
+- ollama
+- openwebui
 ---
 
 ## Wstęp

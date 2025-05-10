@@ -5,12 +5,13 @@ subtitle: "How to add language flags to Jekyll?"
 date: "2018-09-16 17:25"
 author: wojtek
 post_id: 71c087c57e004f89af19fb02cf2862b6
-categories: development
+categories: 
+  - development
 language: en
 tags:
-    - jekyll
-    - blog
-    - webdev
+  - jekyll
+  - blog
+  - webdev
 ---
 
 As I'm writing my blog in two languages I thought it would be nice to show which posts are written in which language. Not that you can't figure this out from the title itself. But why not be absolutely clear on what you can expect from each post? And that's a good opportunity to do something in Jekyll and write a blog post about it.

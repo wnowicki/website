@@ -5,13 +5,14 @@ subtitle: "Have you ever wondered what's inside Jekyll variables?"
 date: "2018-09-02 11:25"
 author: wojtek
 post_id: 5432ef209c2449508ecacab0a9f49504
-categories: development
+categories: 
+  - development
 language: en
 tags:
-    - jekyll
-    - debugging
-    - troubleshooting
-    - blog
+  - jekyll
+  - debugging
+  - troubleshooting
+  - blog
 ---
 
 So far I've faced it at least twice, so keeping my work [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) it's time to document this.

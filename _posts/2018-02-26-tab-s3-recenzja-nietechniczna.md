@@ -6,13 +6,14 @@ date: "2018-02-26 10:40"
 author: wojtek
 post_id: 9984d1c688a54de88248147baacc71fa
 heading_image: 2018-02-26-tab.jpg
-categories: default
+categories: 
+  - default
 language: pl
 tags:
-    - samsung
-    - tablet
-    - android
-    - recenzja
+  - samsung
+  - tablet
+  - android
+  - recenzja
 ---
 
 Zapewne widzieliście już nie jedną recenzję *Samsung Galaxy Tab S3*, większośc z nich odnosi się przede wszystkim do parametrów technicznych itd. Wiadomo zawodowi recenzenci nie są w stanie sprawdzić wszystkich urządzeń przez dłuższy czas. Jako użytkownik tego urządzeniu nie mogę napisać wielu recenzji jednak mogę napisać swoją recenzję z używania tabletu w praktyce.

@@ -1,0 +1,36 @@
+---
+layout: page
+title: Tags
+heading: Blog Tags
+subheading:
+heading_image: blog.jpg
+---
+
+{% assign tags_ordered = site.tags | sort %}
+{% for tag in tags_ordered %}
+  {% assign tag_name = tag[0] %}
+  {% assign all_posts = tag[1] %}
+  {% assign posts = all_posts | slice: 0, 3 %}
+  <div id="{{ tag_name }}" class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{ tag_name | capitalize }}</h3>
+    </div>
+    <ul class="list-group">
+      {% for post in posts %}
+        <li class="list-group-item">
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> - {{ post.date | date: "%b %-d, %Y" }}
+          <div>
+            {% for category in post.categories %}
+              <a href="{{ site.baseurl }}/blog/categories/{{ category }}" class="badge">{{ category }}</a>
+            {% endfor %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+    {% if all_posts.size > 3 %}
+      <div class="panel-footer">
+        <a href="{{ site.baseurl }}/blog/tags/{{ tag_name }}">View all posts in {{ tag_name }}</a>
+      </div>
+    {% endif %}
+  </div>
+{% endfor %}

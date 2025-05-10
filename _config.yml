@@ -18,11 +18,22 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-admin
+  - jemoji
+  - jekyll-archives
+  - jekyll-redirect-from
+  - jekyll-target-blank
+  - jekyll_version_plugin
 markdown: kramdown
 permalink: /:year/:month/:day/:title
 paginate: 5
 paginate_path: "/blog/page-:num/"
 # page_excerpts: true
+
+jekyll_admin:
+    homepage: "index"
+    hidden_links:
+      - datafiles
 
 # Personalisation
 social:
@@ -56,6 +67,26 @@ languages:
     en:
         flag: gb
         name: English
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: archive
+  permalinks:
+    tag: '/blog/tags/:name/'
+    category: '/blog/categories/:name/'
+
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      subtitle:
+      post_id:
+      author:
+      categories:
+      heading_image:
+      language:
+      tags:
 
 # Exclude from processing.
 # The following items will not be processed, by default.
