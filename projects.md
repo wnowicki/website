@@ -6,6 +6,7 @@ subheading: Always trying to make things better...
 heading_image: projects.jpg
 permalink: /projects/
 excerpt: Here you can find projects that I've contributed to over the couple last years
+toc: true
 ---
 
 > Please take a note that this list is showing only public available projects which are just a small part of my experience
@@ -14,40 +15,75 @@ excerpt: Here you can find projects that I've contributed to over the couple las
 
 ### Python Project Template
 
-My go to template for any new Python Project - [`wnowicki/pytemp`](https://github.com/wnowicki/pytemp)
+A batteries-included starter kit for modern Python 3 projects.  
+It ships with:
 
-### BitAware
+- **uv + `pyproject.toml`** for fast dependency management  
+- **Pre-configured CI** (GitHub Actions pipelines for Ruff, Pytest, Pylint & Markdown-lint)  
+- **Opinionated tooling** – pre-commit hooks, `.editorconfig`, `.vscode` settings  
+- **Typed code & test scaffold** so you can `uv run pytest` on day 1  
+- MIT-licensed & release-ready (versioned, Changelog, SemVer tags)
 
-Bitwise toolbox, compatible with Pydantic, source: [`wnowicki/bitaware`](https://github.com/wnowicki/bitaware)
+---
 
-### Sense Hat
+### BitAware - Bitwise Toolbox
 
-Implementation of a simple racing game on [Raspberry Pi] with connected **Sense HAT**.
+Tiny, type-safe helpers for modelling **bit-flag settings** in Python – perfect for  
+permissions or feature toggles stored as a single integer.
 
-Source [wnowicki/sense](https://github.com/wnowicki/sense).
+- Seamless **Pydantic** integration (`User.permissions: UserPermission`)
+- 100 % typed, fully-tested, MIT-licensed, published on PyPI
 
-Related posts [Sense HAT Introduction](/2022/06/21/sense-hat) and [Sense Racing](/2024/04/02/sense-racing).
+View on [GitHub](https://github.com/wnowicki/bitaware) • [PyPI](https://pypi.org/project/bitaware/)
 
-## PHP Libraries
+---
+
+### Sense Hat Sandbox
+
+Mini-games & utilities for the **Raspberry Pi Sense HAT** (and the desktop emulator).
+
+- “**Sense Racing**” – pixel-car dodging game with progressive speed boost
+- “Slug” – classic snake-style tutorial ported to the LED matrix
+- Works on real hardware **or** the `sense_emu` simulator
+- One-command setup: `pip install -r requirements.txt`
+- Extras: script to clear LEDs, ready-made virtual-env instructions
+
+View on [GitHub](https://github.com/wnowicki/sense)  
+Blog posts: [Sense HAT Intro](../2022/06/21/sense-hat) | [Sense Racing](../2024/04/02/sense-racing)
+
+---
+
+## PHP
 
 ### PHP Foundation
 
-- Top level library with all base stuff that other projects are build on
-- Base simple contracts (ex. `Entity`, `Arrayable`, `Persistable`, `Repository`) allowing the ability to define some top level characteristics of a class
-- `AbstractEntity` support for *plain entities* automated setters (with *type hinting*) and getters as well as internal *factory* and *serialization* `toArray()`
-- Top level *Exceptions* set
-- *Automated Adviser* stack including *rules* and *condition* objects. *Conditions* are defined as *bitwise* values so can be combined together. Automated *Advice* processor implementation and *advice* and *risk* objects
-- *Bitwise Property* to support bitwise solutions
-- Repository: `PayBreak/foundation` *(discontinued)*
-- Based on concept of [`wnowicki/generic`](https://github.com/wnowicki/generic) *abandoned*
+Lean, **framework-agnostic** toolbox that gives your domain layer the same conveniences you expect from a full framework—without dragging the framework in.
+
+- **Smart Entity** base class – auto-generated getters / setters, value casting & change-tracking for clean data objects  
+- **Reusable contracts** `Arrayable`, `Jsonable`, `Indexable`, `Persistable`, … keep DTOs & repositories strongly-typed  
+- **PSR-friendly**: ships with `PsrLoggerTrait` and follows PSR-1/4/12 + PSR-3 where relevant  
+- Built-in **Exception hierarchy** for consistent error handling  
+- **Quality gates**: PHPUnit + PHPStan (level 9), Travis CI, StyleCI & Scrutinizer badges out of the box  
+- PHP ≥ 8.1, MIT-licensed – install in seconds:  
+  
+  ```bash
+  composer require code-bushido/foundation
+  ```
+
+- Based on concept of [`wnowicki/generic`](https://github.com/wnowicki/generic) *(abandoned)*
+
+View on [GitHub](https://github.com/code-bushido/foundation) • [Packagist](https://packagist.org/packages/code-bushido/foundation)
+
+---
 
 ### Older Projects
 
 - PHP Collections [`wnowicki/collections`](https://github.com/wnowicki/collections)
 - PHP Cli [`wnowicki/cli`](https://github.com/wnowicki/cli) set of [command line](https://en.wikipedia.org/wiki/Command-line_interface) tools
 
+---
+
 ## Misc
 
+- Mac install script [`wnowicki/misc`](https://github.com/wnowicki/misc/blob/master/mac-install.sh)
 - Matlab source: [`wnowicki/matlab`](https://github.com/wnowicki/matlab)
-
-[Raspberry Pi]: /blog/categories/raspi/
