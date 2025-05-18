@@ -16,6 +16,18 @@ excerpt: Here you can find projects that I've contributed to over the couple las
 
 My go to template for any new Python Project - [`wnowicki/pytemp`](https://github.com/wnowicki/pytemp)
 
+### BitAware
+
+Bitwise toolbox, compatible with Pydantic, source: [`wnowicki/bitaware`](https://github.com/wnowicki/bitaware)
+
+### Sense Hat
+
+Implementation of a simple racing game on [Raspberry Pi] with connected **Sense HAT**.
+
+Source [wnowicki/sense](https://github.com/wnowicki/sense).
+
+Related posts [Sense HAT Introduction](/2022/06/21/sense-hat) and [Sense Racing](/2024/04/02/sense-racing).
+
 ## PHP Libraries
 
 ### PHP Foundation
@@ -29,16 +41,13 @@ My go to template for any new Python Project - [`wnowicki/pytemp`](https://githu
 - Repository: `PayBreak/foundation` *(discontinued)*
 - Based on concept of [`wnowicki/generic`](https://github.com/wnowicki/generic) *abandoned*
 
-### Luhn Algorithm
-
-- Simple implementation of [*Luhn Algorithm*](https://en.wikipedia.org/wiki/Luhn_algorithm) to calculate checksum for a number in PHP
-- Repository: `PayBreak/luhn` *(discontinued)*
-
 ### Older Projects
 
 - PHP Collections [`wnowicki/collections`](https://github.com/wnowicki/collections)
 - PHP Cli [`wnowicki/cli`](https://github.com/wnowicki/cli) set of [command line](https://en.wikipedia.org/wiki/Command-line_interface) tools
 
-## Matlab
+## Misc
 
-- Repository: [`wnowicki/matlab`](https://github.com/wnowicki/matlab)
+- Matlab source: [`wnowicki/matlab`](https://github.com/wnowicki/matlab)
+
+[Raspberry Pi]: /blog/categories/raspi/
