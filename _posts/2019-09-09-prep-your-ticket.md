@@ -50,7 +50,7 @@ In order to get things right you have to sort out things from the list below:
     It’s always better to play smaller tickets. As well it will allow to share them in between your team, so it gets delivered faster.
 
 > ### Write what you don’t know!
-> 
+>
 > And your prep will become getting those questions answered.
 
 Remember about some key principles. Timebox everything, make sure you are not spinning on anything. If you get stuck ask for help.
@@ -63,27 +63,27 @@ Now it’s time to start doing some technical preparation. Assuming that you kno
 
 Remember that in this stage it’s really important to write down key things. As in this stage, you will be creating actual tasks or even additional tickets. Anyone who will pick this after you should be able to complete it without repeating what you’ve done already. Creating **clear tasks is important as well from a visibility point** of view so [SCRUM](https://en.wikipedia.org/wiki/Scrum_(software_development)) Master, iteration manager or event the rest of a business can see progress.
 
-0. **What documentation I need to write?**
+1. **What documentation I need to write?**
 
     Documentation is really important part of the software, although clean code should explain itself some higher level description is key. Especially with API’s, another developer to work with this code needs to know where to start. So check what documentation you need to update or create.
 
-0. **Is this affect the external world?**
+2. **Is this affect the external world?**
 
     For example, am I changing public API? If so, then the previous point becomes even more important. Remember to be really careful in this area. Other people are using it so you can’t introduce any breaking changes or remove any functionality. And don’t forget to apply some standards like paginations, limits, filters where applicable.
 
-0. **What is the architecture?**
+3. **What is the architecture?**
 
     How do I design it? Should I introduce a new service? Or add this as a part of the existing one? How might this thing evolve in the future? Is it extendable? Don’t forget to align your solution with the overall architecture of your system. And use some best practices ex. [SOLID design principles](https://stackify.com/solid-design-principles/).
 
-0. **What technologies I need to use?**
+4. **What technologies I need to use?**
 
     Do I need to introduce any new technologies? If so what technologies? Is what you have at the moment available insufficient? Or introducing new will make things a lot easier? But then what additional implications would it bring? And management overhead for future? Potentially second difficult question here.
 
-0. **Do I need to change any data structures?**
+5. **Do I need to change any data structures?**
 
     If things are already abstracted properly then you almost shouldn’t care about it. But if they are not then you must check if your changes won’t break anything in other parts of the system or even out of it like reporting.
 
-0. **How I will be testing it?**
+6. **How I will be testing it?**
 
     Last but not the least. Good testing is priceless. Current tests should make sure that you are not breaking anything in the system. That’s why so far there wasn’t much about making sure you are not breaking anything. So don’t break current… but as well to maintain coverage and your safe sleep in future you have to write some good tests. Prepare a plan for it and validate it with your QA.
 

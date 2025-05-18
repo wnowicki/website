@@ -151,7 +151,7 @@ So every 50 rows speed will slightly increase making the game more challenging b
 
 Below you can find everything all together just in case I've skipped something in my explanation. This simple example proves that writing something fun and enjoyable isn't so difficult. Obviously, if you own SenseHat yourself you must try to play on the device itself not only in the emulator.
 
-<script src="https://gist.github.com/wnowicki/80716b0a37c76068905f94ca101183b8.js"></script>
+{% include gist.html gist_address="https://gist.github.com/wnowicki/80716b0a37c76068905f94ca101183b8.js" %}
 
 You can find the latest version of this game [here](https://github.com/wnowicki/sense/blob/main/race.py).
 

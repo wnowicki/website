@@ -67,7 +67,7 @@ docker run hello-world
 
 This is the result you should see on your screen
 
-<img class="img-responsive img-rounded" src="/assets/img/post/20220109-docker.png" alt="Docker container" />
+![Docker container]({{ site.baseurl }}/assets/img/post/20220109-docker.png){: .img-responsive .img-rounded}
 
 ### Installing Docker Compose
 

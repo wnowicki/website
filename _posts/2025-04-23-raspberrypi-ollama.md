@@ -25,7 +25,7 @@ tags:
 
 Obecnie wielu użytkowników korzysta z ChatGPT lub innych dużych modeli językowych (LLM – *Large Language Model*) za pośrednictwem aplikacji mobilnych lub przeglądarek internetowych. A gdyby tak mieć własny, prywatny model? Pełną kontrolę nad tym, aby zadawane pytania i otrzymywane odpowiedzi nigdy nie zostały zapisane na zewnętrznych serwerach? Być może celem jest zbudowanie własnego rozwiązania opartego na LLM lub po prostu przetestowanie alternatywnych modeli, aby znaleźć ten najlepiej dopasowany do własnych potrzeb.
 
-<img class="img-responsive img-rounded" src="/assets/img/post/202504-004.png" alt="Open WebUI" />
+![Open WebUI](/assets/img/post/202504-004.png "Open Web"){: .img-responsive .img-rounded}
 
 Mniejsze modele LLM można uruchamiać lokalnie. Na przykład na komputerze MacBook Pro z procesorem M3 Pro modele o rozmiarze od 12 do 27 miliardów parametrów zapewniają komfortową prędkość działania. A jak będzie w przypadku Raspberry Pi 5, które nie posiada dedykowanego GPU? Czy uda się uruchomić jakikolwiek model? I jak szybko będzie można uzyskać odpowiedzi?
 
@@ -37,7 +37,7 @@ Jeśli Raspberry Pi nie jest jeszcze przygotowane lub istnieje potrzeba ponownej
 
 Do przygotowania karty pamięci z systemem operacyjnym potrzebne będzie oprogramowanie [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
 
-<img class="img-responsive img-rounded" src="/assets/img/post/202504-001.png" alt="" />
+![Raspberry Pi Imager]({{ site.baseurl }}/assets/img/post/202504-001.png){: .img-responsive .img-rounded}
 
 Program przeprowadza użytkownika przez proces instalacji systemu:
 
@@ -91,7 +91,7 @@ ollama run gemma3:1b
 
 W terminalu pojawi się odpowiednie okno, w którym będzie można rozpocząć rozmowę z modelem:
 
-<img class="img-responsive img-rounded" src="/assets/img/post/202504-003.png" alt="" />
+![Ollama console]({{ site.baseurl }}/assets/img/post/202504-003.png){: .img-responsive .img-rounded}
 
 Warto pamiętać, że jakość odpowiedzi zależy od rozmiaru modelu – w tym przypadku używany jest stosunkowo mały model. Większe modele dostępne są [tutaj](https://github.com/ollama/ollama?tab=readme-ov-file#model-library).
 
@@ -118,19 +118,19 @@ http://localhost:8080
 
 Po załadowaniu ekranu powitalnego:
 
-<img class="img-responsive img-rounded" src="/assets/img/post/202504-005.png" alt="" />
+![Open WebUI]({{ site.baseurl }}/assets/img/post/202504-005.png "Open Web"){: .img-responsive .img-rounded}
 
 należy skonfigurować nowego użytkownika:
 
-<img class="img-responsive img-rounded" src="/assets/img/post/202504-006.png" alt="" />
+![Open WebUI]({{ site.baseurl }}/assets/img/post/202504-006.png "Open Web"){: .img-responsive .img-rounded}
 
 Jeśli połączenie z serwerem Ollama przebiegnie prawidłowo, na liście dostępnych modeli pojawi się wcześniej zainstalowany model:
 
-<img class="img-responsive img-rounded" src="/assets/img/post/202504-007.png" alt="" />
+![Open WebUI]({{ site.baseurl }}/assets/img/post/202504-007.png "Open Web"){: .img-responsive .img-rounded}
 
 Dodatkowe modele można pobierać bezpośrednio z poziomu aplikacji, wpisując nazwę modelu w wyszukiwarce:
 
-<img class="img-responsive img-rounded" src="/assets/img/post/202504-008.png" alt="" />
+![Open WebUI]({{ site.baseurl }}/assets/img/post/202504-008.png "Open Web"){: .img-responsive .img-rounded}
 
 ## Rezultaty i wnioski
 

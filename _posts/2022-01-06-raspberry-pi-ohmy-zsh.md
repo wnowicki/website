@@ -20,7 +20,7 @@ If you have one already you probably know how easy is to set it up. If you think
 
 Raspberry Pi is a great learning programming platform for kids. It has great support for Scratch and Python. There are hardware extensions like [Sense HAT](https://www.raspberrypi.com/products/sense-hat/) which are making coding a little bit more realistic game. Of course, you can use it for coding in almost any language or host a web server, DB server or maybe game server ex. MineTest one. Opportunities are almost limitless.
 
-<img class="img-responsive img-rounded" src="/assets/img/post/20220106-rpi.png" alt="Terminal view" />
+![Terminal view]({{ site.baseurl }}/assets/img/post/20220106-rpi.png){: .img-responsive .img-rounded}
 
 I have at the moment three older boards, two RPi2 and one RPi3. One of them is set up to be a retro game console, the other one has a media center OS installed. Both are not in use at the moment, I don't have time for games and TV has Netflix built-in. RPi3 was always to play with, I have installed the latest Raspberry Pi OS, default running in console mode and most of the time I'm using it with SSH. Based on it I'll write a couple of posts/tutorials.
 
@@ -28,7 +28,7 @@ I have at the moment three older boards, two RPi2 and one RPi3. One of them is s
 
 The first one, really short is about installing [Oh My ZSH](https://ohmyz.sh) on RPi. What is this? If you work a lot in a computer console you probably like to improve a little bit your experience and make your work more efficient. Oh My ZSH is a framework that comes with a lot of [plugins](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins) and [themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) that you can use. For example, you can see the git branch that you are checkout to.
 
-<img class="img-responsive" src="/assets/img/post/20220106-terminal-1.png" alt="Terminal view" />
+![Terminal view]({{ site.baseurl }}/assets/img/post/20220106-terminal-1.png){: .img-responsive .img-rounded}
 
 Installation is really simple, first install ZSH shell:
 
@@ -44,4 +44,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 You will be asked if you want to change your default shell to zsh after confirming that you should see something like that on your screen:
 
-<img class="img-responsive" src="/assets/img/post/20220106-terminal-2.png" alt="Terminal view" />
+![Terminal view]({{ site.baseurl }}/assets/img/post/20220106-terminal-2.png){: .img-responsive .img-rounded}

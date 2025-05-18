@@ -12,6 +12,7 @@ keywords: IT, PHP, agile, oop, Raspberry Pi, photography, scrum, software develo
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://wojciechnowicki.com" # the base hostname & protocol for your site
 
+timezone: "Europe/Warsaw" # e.g. "America/New_York"
 # Build settings
 plugins:
   - jekyll-paginate
