@@ -22,8 +22,27 @@ layout: default
 <!-- Main Content -->
 <div class="container">
     <div class="row">
+        {% if page.toc %}
+        <div class="hidden-lg col-sm-12 col-md-offset-1 col-md-10 hidden-print">
+            <div class="toc">
+                <h4>Table of Contents</h4>
+                {{ content | toc_only }}
+            </div>
+            <hr>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+            {{ content }}
+        </div>
+        <div class="col-lg-2 hidden-xs hidden-sm hidden-md">
+            <div class="toc">
+                <h4>Table of Contents</h4>
+                {{ content | toc_only }}
+            </div>
+        </div>
+        {% else %}
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             {{ content }}
         </div>
+        {% endif %}
     </div>
 </div>

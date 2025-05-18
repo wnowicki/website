@@ -406,3 +406,18 @@ body {
 .label a:hover {
     text-decoration: none;
 }
+
+div.toc * {
+    font-size: 17px;
+    color: #404040;
+}
+
+div.toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.toc ul ul {
+  padding-left: 10px;
+}

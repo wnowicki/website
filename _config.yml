@@ -24,6 +24,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-target-blank
   - jekyll_version_plugin
+  - jekyll-toc
 markdown: kramdown
 permalink: /:year/:month/:day/:title
 paginate: 5

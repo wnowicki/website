@@ -23,6 +23,15 @@ layout: default
 <article>
     <div class="container">
         <div class="row">
+            {% if page.toc %}
+            <div class="hidden-lg col-sm-12 col-md-offset-1 col-md-10 hidden-print">
+              <div class="toc">
+                  <h4>Table of Contents</h4>
+                  {{ content | toc_only }}
+              </div>
+              <hr>
+            </div>
+            {% endif %}
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 {% if page.youtube.id %}
                     <h2>{{ page.youtube.title }}</h2>
@@ -56,6 +65,14 @@ layout: default
                 </ul>
 
             </div>
+            {% if page.toc %}
+            <div class="col-lg-2 hidden-xs hidden-sm hidden-md">
+                <div class="toc">
+                    <h4>Table of Contents</h4>
+                    {{ content | toc_only }}
+                </div>
+            </div>
+            {% endif %}
 
             {% if page.post_id and jekyll.environment == "production" %}
             <!-- Comments -->

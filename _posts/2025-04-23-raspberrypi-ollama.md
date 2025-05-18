@@ -9,6 +9,7 @@ categories:
 - raspi
 heading_image: 2025-04-23.jpg
 language: pl
+toc: true
 tags:
 - ai
 - llm

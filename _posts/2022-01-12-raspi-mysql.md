@@ -9,6 +9,7 @@ categories:
   - raspi
 heading_image: 2022-01-rpi2.jpg
 language: en
+toc: true
 tags:
   - raspberrypi
   - docker

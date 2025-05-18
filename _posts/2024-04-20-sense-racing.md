@@ -9,6 +9,7 @@ categories:
   - raspi
 heading_image: 2024-04-02.jpg
 language: en
+toc: true
 tags:
   - raspberrypi
   - sensehat
