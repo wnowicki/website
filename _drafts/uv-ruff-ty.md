@@ -16,92 +16,95 @@ tags:
 
 ## Wstęp
 
-Python jest bardzo wyjątkowym językiem programowania. W sumie jest z nim trochę tak jak by to wynikało z jego nazwy:
+Python to wyjątkowy język programowania, a jego nazwa nawiązuje wprost do słynnego brytyjskiego kabaretu:
 
-> When he began implementing Python, Guido van Rossum was also reading the published scripts from “Monty Python’s Flying Circus”, a BBC comedy series from the 1970s. Van Rossum thought he needed a name that was short, unique, and slightly mysterious, so he decided to call the language Python.
-> [source](https://docs.python.org/3/faq/general.html#why-is-it-called-python)
+> When he began implementing Python, Guido van Rossum was also reading the published scripts from *Monty Python’s Flying Circus*, a BBC comedy series from the 1970s. Van Rossum thought he needed a name that was short, unique, and slightly mysterious, so he decided to call the language **Python**.
+> [źródło](https://docs.python.org/3/faq/general.html#why-is-it-called-python)
 
-Jego zalety są jego wadami a wady zaletami. Faktem jest że korzysta z niego niezliczona rzesza ludzi i to w bardzo szerokim spektrum zastosowań, od prostych skryptów automatyzujących czy wykonujących jednorazowe przetwarzanie danych po całe aplikacje napisane w tym języku. A przede wszystkim jest obecnie używany do **uczenia maszynowego** (ML) i **sztucznej inteligencji** (AI). W związku z tym jego użytkownikami (nie wiem czy programista jest tu dobrym określeniem) są zarówno zaawansowani architekci oprogramowania jak również naukowcy którzy skupiają się na nauce a nie kodzie.
+Paradoksalnie — cechy będące zaletami języka potrafią jednocześnie stać się jego wadami. Python cieszy się gigantyczną popularnością: od prostych skryptów automatyzujących, przez aplikacje webowe, aż po projekty z zakresu **uczenia maszynowego** (ML) i **sztucznej inteligencji** (AI). Użytkownikami są zarówno doświadczeni architekci oprogramowania, jak i naukowcy skupieni bardziej na modelach niż na kodzie.
 
-Dołączając do tego bardzo dynamiczny rozwój samego pythona i jego bibliotek, otrzymujemy projekty o bardzo zróżnicowanych standardach. Ponieważ te standardy również ulegają dynamicznemu rozwojowi. W związku z tym w wielu nowych artykułach w internecie dalej opisywane są jako metody do używania również te starsze standardy. Z jednej strony to dobrze że mamy szersze możliwości, że mamy możliwość z drugiej strony czy to dobrze czy nie lepsza byłaby jedna silnie rozwijana ścieżka? Kiedy jeszcze aktywnie pisałem coś w PHP wiadome był że w nowym projekcie użyjemy composer, phpunit itd. A w Python? Od jakiegoś czasu rozwijam swój własny szablon projektu [`wnowicki/pytemp`](https://github.com/wnowicki/pytemp), w ostatnim czasie musiałem znacząco przyspieszyć z jego aktualizacjami żeby w nowych projektach używać tych nowszych narzędzi. Zapraszam do zapoznania się z przyszłością projektów w Python.
+Dynamiczny rozwój ekosystemu powoduje jednak, że projekty powstają w oparciu o różne – często konkurencyjne – standardy i narzędzia. W sieci wciąż trafiamy na artykuły opisujące starsze podejścia, co z jednej strony zwiększa wybór, z drugiej utrudnia podjęcie decyzji „co jest teraz najlepsze”.
 
-Mam nadzieję że liczba projektów nie używających żadnego narzędzia do zarządzania zależnościami się sukcesywnie zmniejsza. Używasz pip w swoim? To bardzo dobrze jednak po zapoznaniu się z uv pewnie rozpoczniesz migracje. Zaczynając swoją przygodę z Python (jakieś pięć lat temu), przesiadałem się z rozbudowanej struktury `composer.json` na… no właśnie `requirements.txt` w którym nie do końca wiadomo czy lepiej zapisywać wszystko poprzez `pip freeze` czy tylko te zdefiniowane przez nas zależności. A jakiś plik projektu… `config.py` no ale… ja zacząłem odrazu z `pyproject.toml` (który moim zdaniem ma więcej sensu, no jest nowocześniejszy). Do tego `pylint` ze swoją konfiguracją itd.  
+Gdy wiele lat temu pisałem jeszcze w PHP, wybór był prosty: **Composer**, **PHPUnit** i kilka sprawdzonych wzorców. W świecie Pythona wachlarz możliwości jest znacznie szerszy. Od pewnego czasu rozwijam szablon projektu [`wnowicki/pytemp`](https://github.com/wnowicki/pytemp), który aktualizuję, by korzystał z nowocześniejszych narzędzi. W tym artykule pokażę Ci, jak wygląda przyszłość zarządzania projektem w Pythonie z użyciem **uv**, **Ruff** i **ty**.
 
-Dalej jednak mi się to wszystko nie zgrywało. Na sam koniec warto wspomnieć o samych wirtualnych środowiskach które poza tym że są genialnym pomysłem z czasem zaczynają się wydawać trochę toporne. Co jednak w Python jest jedną z lepszych rzeczy to jego standardy czyli Python Enhancement Proposals znany jako PEP. To są standardy jednak bez ich przestrzegania są tylko dokumentami które definiują jak coś powinno być. Bez konsekwencji ich użycia ciężko tak naprawdę mówić o standardzie. Dlatego tak ważne są narzędzia do ich przestrzegania. Przespałem trochę erę narzędzi takich jak `pyflake8`, `Black` czy `poetry` (tak są to różnego rodzaju narzędzia). Długo nie startowałem żadnego projektu, a kiedy nadszedł ten dzień utworzyłem go na bazie `uv` i `ruff`.
+> **Uwaga:** mam nadzieję, że liczba projektów „bez żadnego menedżera zależności” będzie systematycznie maleć. Jeśli nadal używasz samego `pip`, przygotuj się na migrację.
 
 ## Technikalia
 
-### UV
+### uv – ultraszybki menedżer pakietów
 
-Na pierwszy ogień UV narzędzie do zarządzania projektem oraz jego zależnościami zależnościami (pakietami, paczkami). Sami o sobie piszą “An extremely fast Python package and project manager, written in Rust.” Jest to jedyna rzecz którą musimy najpierw zainstalować sami ręcznie.
+`uv` to „*extremely fast Python package and project manager, written in Rust*”. To jedyne narzędzie, które musimy zainstalować ręcznie:
 
-```shell
+```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-Ja przytaczam tu pewne rozwiązania, jednak najlepiej zawsze odnosić się to aktualnej wersji dokumentacji narzędzia. Swoją drogą taki disclaimer i odnośnik powinien znajdować się w każdym artykule.
+> **Zawsze** odwołuj się do oficjalnej [dokumentacji](https://docs.astral.sh/uv/) – projekt rozwija się naprawdę szybko.
 
-Po zainstalowaniu, jeśli startujemy nowy projekt to wystarczy odpalić poniższą komendę, zbuduje ona za nas niezbędny szkielet projektu.
+**Nowy projekt** uruchomisz jedną komendą:
 
-```shell
+```bash
 uv init example
 ```
 
-Jeśli chcemy dodać coś do naszego projektu to:
+**Dodawanie zależności:**
 
-```shell
+```bash
 uv add pandas
 ```
 
-Wirtualne środowisko? Jest ale my się nim już nie przejmujemy, nie trzeba nic aktywować itd. Jeśli chcemy uruchomić jakiś skrypt to używamy do tego komendy:
+`uv` automatycznie zarządza wirtualnym środowiskiem, więc nie musisz go aktywować ani pamiętać o `source venv/bin/activate`. Skrypt uruchomisz po prostu:
 
-```shell
+```bash
 uv run demo.py
 ```
 
-Możliwości jest znacznie więcej, jest również kompatybilność z pip. Możemy sobie wyeksportować nasze aktualne zależności do `requirements.txt` jeśli jakieś środowisko by tego wymagało, na przykład Jupyter Notebooks. Nie będziemy narazie wchodzić w to głębiej.
+Potrzebujesz eksportu zależności do `requirements.txt` (np. dla Jupytera)? Nie ma problemu – `uv` to obsługuje. Na tym etapie nie będziemy jednak zagłębiać się w szczegóły.
 
-### Ruff
+### Ruff – linter i formatter w jednym
 
-Mając już zainstalowane `uv` możemy przystąpić do instalowania kolejnego narzędzia, którym jest linter i formatter `ruff` i tu ciekawostka, dzięki `uv` nie musimy nic bezpośrednio instalować. Jako że `ruff` jest tak zwanym narzędziem, czyli skryptem który działa poza środowiskiem naszego projektu wystarczy że go po prostu wywołamy jednym z poniższych poleceń:
+Mając `uv`, instalacja Ruffa… nie wymaga instalacji. Wystarczy wywołać:
 
-```shell
-uvx ruff check # linter
-uvx ruff format # formatowanie kodu
+```bash
+uvx ruff check     # linter
+uvx ruff format    # formatter
 ```
 
-Oczywiście jeśli ktoś potrzebuje są jeszcze inne sposoby instalacji które znajdują się w dokumentacji https://docs.astral.sh/ruff/installation/
+(Alternatywne metody znajdziesz w [dokumentacji](https://docs.astral.sh/ruff/installation/).)
 
-Aby narzędzie zachowywało się dokładnie tak jak chcemy należy je skonfigurować odpowiednio w pliku `pyrpject.toml` wszystkie opcje opisane są w dokumentacji. O tyle dla samego formatora wystarczy zdefiniować preferowaną przez nas długość linii kodu. To linier czyli komenda `check` wymaga już większego dostosowania do standardów które chcemy przestrzegać. Dla przykładu:
+#### Konfiguracja
+
+W pliku `pyproject.toml` ustawiasz preferencje, np.:
 
 ```toml
 [tool.ruff.lint]
-# 1. Enable flake8-bugbear (`B`) rules, in addition to the defaults.
+# Aktywuj reguły flake8-bugbear (B) oprócz domyślnych:
 select = ["E4", "E7", "E9", "F", "B", "Q"]
 
-# 2. Avoid enforcing line-length violations (`E501`)
+# Nie wymuszaj limitu długości linii (E501):
 ignore = ["E501"]
 ```
 
-Formatter sam zmienia pliki w projekcie, linter w standardzie wypisuje tylko znalezione problemy, część z tych problemów może zwykle zostać naprawiona automatycznie, żeby to uczynić należy dodać parametr `—fix`:
+* Formatter (`ruff format`) zmienia pliki w miejscu.
+* Linter (`ruff check`) domyślnie tylko raportuje, ale wiele problemów naprawisz automatycznie z opcją `--fix`:
 
-```shell
+```bash
 uvx ruff check --fix
 ```
 
-### ty
+### ty – statyczna kontrola typów
 
-Jesteś zwolennikiem adnotacji typu w języku? Dynamiczne typowanie i możliwość nie używania konkretnych typów w trakcie tworzenia prostych skryptów ma swoje zalety. Jednak w większych aplikacjach jest po prostu gwoździem do trumny. Niechcesz czekać aż w trakcie działania aplikacji pojawi się jakiś mało prawdopodobny edge-case i zostanie zwrócona wartość innego typu niż oczekiwany? Na ratunek przychodzi kolejne narzędzie `ty`
+Lekkie skrypty bez adnotacji typów są wygodne, lecz w dużych aplikacjach ich brak mści się w najmniej spodziewanym momencie. Tu z pomocą przychodzi **ty**:
 
-```shell
+```bash
 uvx ty check
 ```
 
- Powyższa komenda przeanalizuje kod i zwróci wszelkie błędy związane z typami. Ja jestem na etapie wprowadzania tego narzędzia do użycia, sprawdziłem jeden ze swoich projektów i wyniki są ciekawe.
+Narzędzie analizuje kod i zwraca wszystkie niezgodności typów. Przykładowy komunikat:
 
-```shell
+```text
 error[invalid-parameter-default]: Default value of type `None` is not assignable to annotated parameter type `int`
-   --> app/xxx/yyy:236:62
+   --> app/xxx/yyy.py:236:62
     |
 235 |     def __container_url(
 236 |         self, cont_id: int, only_not_assessed: bool = False, page: int = None
@@ -112,8 +115,14 @@ error[invalid-parameter-default]: Default value of type `None` is not assignable
 info: rule `invalid-parameter-default` is enabled by default
 ```
 
-Udanej zabawy z naprawianiem.
+Zabawa w usuwanie ostrzeżeń potrafi otworzyć oczy na błędy, które do tej pory umykały.
 
 ## Podsumowanie
 
-To tylko krótkie wprowadzenie do trzech narzędzi, którym w najbliszym czasie poświęcę uwagę na blogu. 
+Powyżej opisałem trzy narzędzia, które – moim zdaniem – wyznaczają kierunek rozwoju projektów Pythonowych:
+
+1. **uv** – błyskawiczny menedżer pakietów i środowisk,
+2. **Ruff** – dwa w jednym: linter i formatter,
+3. **ty** – statyczna analiza typów.
+
+W kolejnych wpisach przyjrzę się każdemu z nich bardziej szczegółowo. Jeśli masz pytania lub własne doświadczenia, podziel się nimi w komentarzach.
