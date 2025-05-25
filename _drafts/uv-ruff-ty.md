@@ -7,11 +7,13 @@ author: wojtek
 post_id: 9112b822838bee19ce8db72fc5abe344
 categories:
 - development
-# heading_image: 2025-04-23.jpg
+heading_image: 2025-05-25.jpg
 language: pl
 toc: true
 tags:
 - python
+- tools
+- opensource
 ---
 
 ## Wstęp
@@ -29,9 +31,11 @@ Gdy wiele lat temu pisałem jeszcze w PHP, wybór był prosty: **Composer**, **P
 
 > **Uwaga:** mam nadzieję, że liczba projektów „bez żadnego menedżera zależności” będzie systematycznie maleć. Jeśli nadal używasz samego `pip`, przygotuj się na migrację.
 
-## Technikalia
+## Narzędzia
 
-### uv – ultraszybki menedżer pakietów
+### uv
+
+[astral-sh/uv](https://github.com/astral-sh/uv) – ultraszybki menedżer pakietów
 
 `uv` to „*extremely fast Python package and project manager, written in Rust*”. To jedyne narzędzie, które musimy zainstalować ręcznie:
 
@@ -61,7 +65,9 @@ uv run demo.py
 
 Potrzebujesz eksportu zależności do `requirements.txt` (np. dla Jupytera)? Nie ma problemu – `uv` to obsługuje. Na tym etapie nie będziemy jednak zagłębiać się w szczegóły.
 
-### Ruff – linter i formatter w jednym
+### ruff
+
+[astral-sh/ruff](https://github.com/astral-sh/ruff) – linter i formatter w jednym
 
 Mając `uv`, instalacja Ruffa… nie wymaga instalacji. Wystarczy wywołać:
 
@@ -92,7 +98,9 @@ ignore = ["E501"]
 uvx ruff check --fix
 ```
 
-### ty – statyczna kontrola typów
+### ty
+
+[astral-sh/ty](https://github.com/astral-sh/ty) – statyczna kontrola typów. 
 
 Lekkie skrypty bez adnotacji typów są wygodne, lecz w dużych aplikacjach ich brak mści się w najmniej spodziewanym momencie. Tu z pomocą przychodzi **ty**:
 
