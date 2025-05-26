@@ -35,7 +35,7 @@ On [CC License](https://creativecommons.org/)
 
 ```plain
 Build: {% project_version commit long %}
-Site generated: {{ site.time | date: "%H:%M %d.%m.%Y "}}
+Site generated: {{ site.time | date: "%H:%M %d.%m.%Y %Z"}}
 ```
 
 Version [{% project_version commit short %}](https://github.com/wnowicki/website/commit/{% project_version commit long %})

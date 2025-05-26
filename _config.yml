@@ -79,6 +79,10 @@ jekyll-archives:
     tag: '/blog/tags/:name/'
     category: '/blog/categories/:name/'
 
+toc:
+  min_level: 2 # default: 1
+  max_level: 3 # default: 6
+
 jekyll_compose:
   default_front_matter:
     drafts:
