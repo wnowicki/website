@@ -18,7 +18,7 @@ permalink: /credits/
 
 ## Assets
 
-- **Template:** [Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/) - "is a stylish, responsive blog theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/)."
+- **Template:** [Clean Blog](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll) - "is a stylish, responsive blog theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/)."
 - [CSS Flag Sprites generator](https://www.flag-sprites.com/ "Country flags in single CSS sprite")
 - [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
 
