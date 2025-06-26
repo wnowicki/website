@@ -3,7 +3,7 @@ title: Konfiguracja Bitwise w Pythonie
 layout: post
 subtitle: Wprowadzenie i uzycie biblioteki BitAware
 description: Zapisywanie konfiguracji jako bitmask to nie „retro-sztuczka”, lecz praktyka obecna od pierwszych komputerów aż po współczesne API. Jej siłą są prostota sprzętu i ekonomia danych – a dzięki narzędziom takim jak BitAware możesz korzystać z niej równie wygodnie, jakbyś operował listą pól typu bool.
-# date: 2025-05-31 22:47
+date: 2025-06-26 20:24
 author: wojtek
 post_id: e51d063b09669ab8088fe822814d38aa
 categories:
