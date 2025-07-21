@@ -52,7 +52,7 @@ social:
         url: https://github.com/wnowicki
         icon: fa-brands fa-github
     discord:
-        footer: true
+        footer: false
         url: https://discord.com/users/985806052354306059
         icon: fa-brands fa-discord
     scholar:
@@ -60,7 +60,7 @@ social:
         url: https://scholar.google.com/citations?hl=en&user=7EwCf8cAAAAJ
         icon: fa-brands fa-google-scholar
     orcid:
-        footer: false
+        footer: true
         url: https://orcid.org/0000-0001-8686-8158
         icon: fa-brands fa-orcid
     facebook:
