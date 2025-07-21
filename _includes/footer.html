@@ -4,54 +4,18 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center hidden-print">
-                    <li>
-                        <a href="{{ site.social.twitter.url }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa-solid fa-circle fa-stack-2x"></i>
-                                <i class="fa-brands fa-x-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ site.social.linkedin.url }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa-solid fa-circle fa-stack-2x"></i>
-                                <i class="fa-brands fa-linkedin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ site.social.github.url }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa-solid fa-circle fa-stack-2x"></i>
-                                <i class="fa-brands fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ site.social.scholar.url }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa-solid fa-circle fa-stack-2x"></i>
-                                <i class="fa-brands fa-google-scholar fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="hidden-sm hidden-xs">
-                        <a href="{{ site.social.orcid.url }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa-solid fa-circle fa-stack-2x"></i>
-                                <i class="fa-brands fa-orcid fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                      <a href="{{ site.baseurl }}/feed.xml">
-                          <span class="fa-stack fa-lg">
-                              <i class="fa-solid fa-circle fa-stack-2x"></i>
-                              <i class="fa-solid fa-square-rss fa-stack-1x fa-inverse"></i>
-                          </span>
-                      </a>
-                  </li>
+                    {% for social in site.social %}
+                        {% if social[1].footer == true %}
+                            <li>
+                                <a href="{{ social[1].url }}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="{{ social[1].icon }} fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
                 </ul>
                 <p class="copyright text-muted">
                   Copyright &copy; WojciechNowicki.com 2013-{{ site.time | date: '%Y'}},

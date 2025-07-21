@@ -39,28 +39,42 @@ jekyll_admin:
 
 # Personalisation
 social:
-    name: Wojciech Nowicki
-    links:
-      - https://twitter.com/wonowicki
-      - https://github.com/wnowicki
-      - https://linkedin.com/in/wonowicki
-
     twitter:
+        footer: True
         url: https://twitter.com/wonowicki
-    facebook:
-        url: https://www.facebook.com/wojciechnowickicom
-    github:
-        url: https://github.com/wnowicki
-    youtube:
-        url: https://www.youtube.com/c/WojciechNowicki
+        icon: fa-brands fa-twitter
     linkedin:
+        footer: true
         url: https://linkedin.com/in/wonowicki
-    flickr:
-        url: https://www.flickr.com/photos/wnowicki
+        icon: fa-brands fa-linkedin
+    github:
+        footer: true
+        url: https://github.com/wnowicki
+        icon: fa-brands fa-github
+    discord:
+        footer: true
+        url: https://discord.com/users/985806052354306059
+        icon: fa-brands fa-discord
     scholar:
+        footer: true
         url: https://scholar.google.com/citations?hl=en&user=7EwCf8cAAAAJ
+        icon: fa-brands fa-google-scholar
     orcid:
+        footer: false
         url: https://orcid.org/0000-0001-8686-8158
+        icon: fa-brands fa-orcid
+    facebook:
+        footer: false
+        url: https://www.facebook.com/wojciechnowickicom
+        icon: fa-brands fa-facebook
+    youtube:
+        footer: false
+        url: https://www.youtube.com/c/WojciechNowicki
+        icon: fa-brands fa-youtube
+    flickr:
+        footer: false
+        url: https://www.flickr.com/photos/wnowicki
+        icon: fa-brands fa-flickr
 
 languages:
     pl:
