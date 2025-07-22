@@ -40,9 +40,13 @@ jekyll_admin:
 # Personalisation
 social:
     twitter:
-        footer: True
+        footer: false
         url: https://twitter.com/wonowicki
         icon: fa-brands fa-twitter
+    bluesky:
+        footer: true
+        url: https://bsky.app/profile/wnowicki.bsky.social
+        icon: fa-brands fa-bluesky
     linkedin:
         footer: true
         url: https://linkedin.com/in/wonowicki
