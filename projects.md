@@ -11,6 +11,10 @@ toc: true
 
 > Please take a note that this list is showing only public available projects which are just a small part of my experience
 
+## Development Site
+
+Please visit [wnowicki.dev](https://wnowicki.dev) for some more developer stuff.
+
 ## Python
 
 ### Python Project Template
