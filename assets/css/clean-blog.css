@@ -33,6 +33,9 @@ a:hover,
 a:focus {
   color: #0085a1;
 }
+a:focus:not(:focus-visible) {
+  outline: none;
+}
 a img:hover,
 a img:focus {
   cursor: zoom-in;
