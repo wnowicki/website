@@ -26,7 +26,7 @@ layout: default
         <div class="hidden-lg col-sm-12 col-md-offset-1 col-md-10 hidden-print">
             <div class="toc">
                 <h4>Table of Contents</h4>
-                {{ content | toc_only }}
+                {{ content | toc_only | replace: 'id="toc"', 'id="toc-mobile"' }}
             </div>
             <hr>
         </div>
@@ -36,7 +36,7 @@ layout: default
         <div class="col-lg-2 hidden-xs hidden-sm hidden-md">
             <div class="toc">
                 <h4>Table of Contents</h4>
-                {{ content | toc_only }}
+                {{ content | toc_only | replace: 'id="toc"', 'id="toc-desktop"' }}
             </div>
         </div>
         {% else %}

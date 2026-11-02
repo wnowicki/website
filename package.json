@@ -1,0 +1,15 @@
+{
+  "name": "wojciechnowicki-site-checks",
+  "private": true,
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "check:html": "node scripts/check-html.mjs",
+    "check:links": "bundle exec ruby scripts/check-links.rb",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.64.1",
+    "html-validate": "11.18.0"
+  }
+}

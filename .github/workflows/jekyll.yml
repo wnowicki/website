@@ -51,6 +51,29 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install validation tools
+        run: npm ci
+      - name: Install test browser
+        run: npx playwright install --with-deps chromium
+      - name: Validate HTML
+        run: npm run check:html
+      - name: Check internal links
+        run: npm run check:links
+      - name: Check accessibility and browser behavior
+        run: npm test
+      - name: Upload browser diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-diagnostics
+          path: test-results/
+          if-no-files-found: ignore
+          retention-days: 7
       - name: Upload artifact
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         # Automatically uploads an artifact from the './_site' directory by default

@@ -5,13 +5,15 @@
 
   <body>
 
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     {% include header.html %}
 
-    <div class="page-content">
+    <main id="main-content" class="page-content" tabindex="-1">
       <div class="wrapper">
-        {{ content }}
+        {{ content | replace: '<pre ', '<pre tabindex="0" ' | replace: '<pre>', '<pre tabindex="0">' }}
       </div>
-    </div>
+    </main>
 
     {% include footer.html %}
 

@@ -13,7 +13,7 @@ language: pl
                     {% if page.subheading %}
                     <h2 class="subheading">{{ page.subheading }}</h2>
                     {% endif %}
-                    <span class="meta">Poziom: {{ page.kurs.poziom }}</br>Część: {{ page.kurs.czesc }}</span>
+                    <span class="meta">Poziom: {{ page.kurs.poziom }}<br>Część: {{ page.kurs.czesc }}</span>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@ language: pl
             </div>
             {% else %}
             <div class="well col-sm-12">
-                NOTE!</br>
+                NOTE!<br>
                 Comments suspended as this is not production environment!
             </div>
             {% endif %}

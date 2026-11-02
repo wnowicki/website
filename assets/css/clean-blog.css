@@ -38,7 +38,7 @@ a img:focus {
   cursor: zoom-in;
 }
 blockquote {
-  color: #808080;
+  color: #767676;
   font-style: italic;
 }
 blockquote p {
@@ -234,13 +234,13 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #808080;
+  color: #767676;
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
 }
 .post-preview > .post-meta > a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #404040;
 }
 .post-preview > .post-meta > a:hover,
@@ -421,4 +421,54 @@ div.toc ul {
 
 div.toc ul ul {
   padding-left: 10px;
+}
+
+/* Keyboard access without changing the default page layout. */
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 10000;
+  padding: 10px 15px;
+  background: #fff;
+  color: #404040;
+  transform: translateY(-200%);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #0085a1;
+  outline-offset: 3px;
+}
+
+.not-found {
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
+}
+.not-found h1 {
+  margin: 30px 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.text-muted {
+  color: #767676;
+}
+.label-default,
+.badge {
+  background-color: #767676;
+}
+pre:focus-visible {
+  outline: 3px solid #0085a1;
+  outline-offset: 3px;
+}
+@media only screen and (max-width: 767px) {
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav li a {
+    color: #707070;
+  }
 }

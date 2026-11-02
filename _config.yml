@@ -130,3 +130,13 @@ jekyll_compose:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Development tooling must not be copied to the published site.
+exclude:
+  - scripts
+  - tests
+  - package.json
+  - package-lock.json
+  - playwright.config.js
+  - test-results
+  - playwright-report
