@@ -7,7 +7,7 @@ author: wojtek
 post_id: ab5155b368574a36e3fac38a826ece19
 categories: 
   - raspi
-heading_image: 2022-01-rpi2.jpg
+heading_image: 2022-01-rpi2.webp
 language: en
 toc: true
 tags:
@@ -67,7 +67,7 @@ docker run hello-world
 
 This is the result you should see on your screen
 
-![Docker container]({{ site.baseurl }}/assets/img/post/20220109-docker.png){: .img-responsive .img-rounded}
+![Docker container]({{ site.baseurl }}/assets/img/post/20220109-docker.webp){: .img-responsive .img-rounded}
 
 ### Installing Docker Compose
 

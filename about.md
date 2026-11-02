@@ -4,7 +4,7 @@ title: About - Wojciech Nowicki
 description: Wojciech Nowicki's professional background in technology leadership, hands-on software engineering, applied AI, academic teaching and research.
 heading: About me
 subheading: Technology, leadership and engineering
-heading_image: about.jpg
+heading_image: about.webp
 permalink: /about/
 ---
 

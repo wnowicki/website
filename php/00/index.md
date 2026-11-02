@@ -3,7 +3,7 @@ layout: page
 title: Poziom Ogólny - PHP w Praktyce
 heading: Poziom Ogólny
 subheading: PHP w Praktyce
-heading_image: php-main.png
+heading_image: php-main.webp
 permalink: /php/00/
 ---
 

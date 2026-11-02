@@ -2,7 +2,7 @@
 title: Mac Troubleshooting
 author: wojtek
 post_id: 0947b4b52b76498eae67a27ed153c59c
-heading_image: 2015-04-25.jpg
+heading_image: 2015-04-25.webp
 layout: post
 language: en
 categories:

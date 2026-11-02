@@ -5,7 +5,7 @@ subtitle: "Dlaczego warto się go uczyć?"
 date: "2018-09-04 17:50"
 author: wojtek
 post_id: 0d4b96b2776842b5b2a8d05b78379ea7
-heading_image: 2018-09-python.png
+heading_image: 2018-09-python.webp
 categories: 
   - development
 language: pl

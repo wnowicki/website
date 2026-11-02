@@ -5,7 +5,7 @@ subtitle: "Gadżet czy potencjalny następca tradycyjnego notesu?"
 date: "2018-02-26 10:40"
 author: wojtek
 post_id: 9984d1c688a54de88248147baacc71fa
-heading_image: 2018-02-26-tab.jpg
+heading_image: 2018-02-26-tab.webp
 categories: 
   - default
 language: pl

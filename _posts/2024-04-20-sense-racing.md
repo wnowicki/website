@@ -7,7 +7,7 @@ author: wojtek
 post_id: '026513190db7cdcc244d9d7376eb964a'
 categories:
   - raspi
-heading_image: 2024-04-02.jpg
+heading_image: 2024-04-02.webp
 language: en
 toc: true
 tags:

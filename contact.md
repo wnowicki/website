@@ -4,7 +4,7 @@ title: Contact
 description: Contact Wojciech Nowicki by email or through his social profiles.
 heading: Contact me
 subheading: contact[at]wojciechnowicki.com
-heading_image: contact.jpg
+heading_image: contact.webp
 permalink: /contact/
 ---
 

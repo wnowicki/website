@@ -3,7 +3,7 @@ layout: page
 title: PHP w Praktyce
 heading: PHP w Praktyce
 subheading: W budowie
-heading_image: php-main.png
+heading_image: php-main.webp
 permalink: /php/
 ---
 

@@ -4,7 +4,7 @@ title: Projects - Wojciech Nowicki
 description: Public software projects and contributions by Wojciech Nowicki, including Python tools, PHP libraries and Raspberry Pi experiments.
 heading: My Projects
 subheading: Always trying to make things better...
-heading_image: projects.jpg
+heading_image: projects.webp
 permalink: /projects/
 excerpt: Here you can find projects that I've contributed to over the last few years
 toc: true

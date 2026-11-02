@@ -1,6 +1,6 @@
 ---
 title: TextWrangler useful editor
-heading_image: 2014-09-23.jpg
+heading_image: 2014-09-23.webp
 author: wojtek
 post_id: aa159f302ac34d66a50a7610434014ab
 layout: post

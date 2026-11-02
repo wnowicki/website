@@ -3,7 +3,7 @@ title: Awesome Atom Plugins
 author: wojtek
 post_id: 8162d03a8ef61344711db8e074c741bc
 layout: post
-heading_image: 2015-07-26.png
+heading_image: 2015-07-26.webp
 language: en
 categories:
   - development
