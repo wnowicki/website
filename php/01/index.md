@@ -3,7 +3,7 @@ layout: page
 title: Poziom Początkujący - PHP w Praktyce
 heading: Poziom Początkujący
 subheading: PHP w Praktyce
-heading_image: php-main.png
+heading_image: php-main.webp
 permalink: /php/01/
 ---
 

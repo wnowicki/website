@@ -5,7 +5,7 @@ subtitle: "Dostępność czy cena, co wpływa na małą popularność takich urz
 date: "2018-06-10 21:10"
 author: wojtek
 post_id: 7e41f5cccf604941ba4ffa0f2dad4120
-heading_image: 2018-06-10.jpg
+heading_image: 2018-06-10.webp
 categories: 
   - default
 language: pl

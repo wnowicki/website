@@ -5,7 +5,7 @@ subtitle: "How to perform technical inception of business requirements?"
 date: "2018-09-09 17:45"
 author: wojtek
 post_id: 8b808f7667f141bab8e9def097be161b
-heading_image: 2018-09-scrum.jpg
+heading_image: 2018-09-scrum.webp
 categories: 
   - development
 language: en

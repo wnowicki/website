@@ -1,15 +1,16 @@
 ---
 layout: page
 title: Projects - Wojciech Nowicki
+description: Public software projects and contributions by Wojciech Nowicki, including Python tools, PHP libraries and Raspberry Pi experiments.
 heading: My Projects
 subheading: Always trying to make things better...
-heading_image: projects.jpg
+heading_image: projects.webp
 permalink: /projects/
-excerpt: Here you can find projects that I've contributed to over the couple last years
+excerpt: Here you can find projects that I've contributed to over the last few years
 toc: true
 ---
 
-> Please take a note that this list is showing only public available projects which are just a small part of my experience
+> Please note that this list shows only publicly available projects, which are just a small part of my experience.
 
 ## Development Site
 
@@ -74,7 +75,7 @@ Lean, **framework-agnostic** toolbox that gives your domain layer the same conve
   composer require code-bushido/foundation
   ```
 
-- Based on concept of [`wnowicki/generic`](https://github.com/wnowicki/generic) *(abandoned)*
+- Based on the concept of [`wnowicki/generic`](https://github.com/wnowicki/generic) *(abandoned)*
 
 View on [GitHub](https://github.com/code-bushido/foundation) • [Packagist](https://packagist.org/packages/code-bushido/foundation)
 

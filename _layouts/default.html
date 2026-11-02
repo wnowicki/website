@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.language | default: layout.language | default: 'en' | escape }}">
 
   {% include head.html %}
 
   <body>
+    <a class="skip-link" href="#main-content">{% assign page_language = page.language | default: layout.language | default: 'en' %}{% if page_language == 'pl' %}Przejdź do treści{% else %}Skip to main content{% endif %}</a>
 
     {% include header.html %}
 
-    <div class="page-content">
+    <main id="main-content" class="page-content" tabindex="-1">
       <div class="wrapper">
         {{ content }}
       </div>
-    </div>
+    </main>
 
     {% include footer.html %}
 

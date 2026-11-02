@@ -2,7 +2,7 @@
 title: 'Solarized - perfect colors'
 author: wojtek
 post_id: 476baf45291041869aac5a83989c9c9a
-heading_image: 2014-10-05.png
+heading_image: 2014-10-05.webp
 layout: post
 permalink: /2014/10/05/solarized-perfect-colors
 language: en

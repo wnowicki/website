@@ -49,7 +49,7 @@ It's time to add those flags somewhere, in my case I've added them to the standa
 
 ```html
 {% if post.language %}
-    <img src="/assets/flags/blank.gif"
+    <img src="/assets/flags/blank.webp"
          class="flag flag-{{ site.languages[post.language].flag }}"
          alt="{{ site.languages[post.language].name }}" />
 {% endif %}

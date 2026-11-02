@@ -1,24 +1,25 @@
 ---
 layout: page
 title: About - Wojciech Nowicki
+description: Wojciech Nowicki's professional background in technology leadership, hands-on software engineering, applied AI, academic teaching and research.
 heading: About me
-subheading: Everything you want to know but were afraid to ask
-heading_image: about.jpg
+subheading: Technology, leadership and engineering
+heading_image: about.webp
 permalink: /about/
 ---
 
 ## Profile
 
-Innovative and results-driven technology leader with 15+ years of experience driving **AI solutions, scalable architectures, and data-driven decision-making**. A strong blend of technical expertise, research background, and leadership skills, with a passion for transforming ideas into high-impact business applications.
+CTO and technology executive with 15+ years of experience in **software engineering, architecture, and technology leadership**. I combine technology and product strategy for B2B SaaS with hands-on engineering and team development.
 
-Proven track record in **AI-powered product development, R&D leadership, and software architecture**, delivering solutions that enhance automation, analytics, and business intelligence. A strategic thinker who bridges the gap between **technology, business needs, and innovation**, ensuring long-term growth and competitive advantage.
+My work includes **applied AI and AI-enabled product development**, supported by an academic teaching and research background. I connect engineering decisions with business needs and help teams develop the skills to build and maintain useful software.
 
 ---
 
 ## Core Competencies
 
-- Leadership & Strategy: Agile, Scrum, Kanban, Talent Retention, Team Scaling
-- Technical Expertise: OOP, Clean Architecture (PHP, Python), Data Analytics (AWS Lambda, Tableau), AI & Machine Learning, Cloud Computing, SQL & NoSQL Databases (MySQL, MongoDB)
+- Leadership & Strategy: Technology Strategy, Engineering Leadership, Team Development, Agile, Scrum, Kanban, Talent Retention, Team Scaling
+- Technical Expertise: Hands-on Software Engineering, OOP, Clean Architecture (PHP, Python), Data Analytics (AWS Lambda, Tableau), Applied AI & Machine Learning, AI-enabled Product Development, Cloud Computing, SQL & NoSQL Databases (MySQL, MongoDB)
 - Business Acumen: Budgeting, Roadmap Development, Product Strategy, Stakeholder Management
 - Technical Tools: Git, Jira, MacOS/Linux, CI/CD, DevOps Practices
 

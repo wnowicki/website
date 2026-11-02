@@ -3,7 +3,7 @@ title: Useful Atom Plugins
 author: wojtek
 post_id: 8162d03a8ef61344711db8e074c741bc
 layout: post
-heading_image: 2015-08-02.png
+heading_image: 2015-08-02.webp
 language: en
 categories:
   - development
