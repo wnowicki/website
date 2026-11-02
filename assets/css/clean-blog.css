@@ -31,7 +31,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #006f86;
 }
 a:focus:not(:focus-visible) {
   outline: none;
@@ -41,7 +41,7 @@ a img:focus {
   cursor: zoom-in;
 }
 blockquote {
-  color: #808080;
+  color: #666666;
   font-style: italic;
 }
 blockquote p {
@@ -70,9 +70,19 @@ hr.small {
   font-weight: 800;
   letter-spacing: 1px;
 }
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand {
+  color: #595959;
+}
+.navbar-default .navbar-toggle {
+  border-color: #666666;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #595959;
+}
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.65);
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
@@ -81,7 +91,8 @@ hr.small {
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: white;
+    text-decoration: underline;
   }
   .navbar-custom .nav li a {
     color: white;
@@ -89,7 +100,8 @@ hr.small {
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: white;
+    text-decoration: underline;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -110,7 +122,7 @@ hr.small {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -61px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #ffffff;
     border-bottom: 1px solid #f2f2f2;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
@@ -121,14 +133,14 @@ hr.small {
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
+    color: #006f86;
   }
   .navbar-custom.is-fixed .nav li a {
     color: #404040;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+    color: #006f86;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -140,7 +152,8 @@ hr.small {
   }
 }
 .intro-header {
-  background-color: #808080;
+  position: relative;
+  background-color: #666666;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -149,6 +162,16 @@ hr.small {
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 50px;
+}
+.intro-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.62);
+  pointer-events: none;
+}
+.intro-header > .container {
+  position: relative;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
@@ -224,7 +247,7 @@ hr.small {
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #006f86;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -237,7 +260,7 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #808080;
+  color: #666666;
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
@@ -248,7 +271,7 @@ hr.small {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #006f86;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -329,7 +352,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #0085a1;
+  color: #006f86;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -349,8 +372,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #006f86;
+  border: 1px solid #006f86;
   color: white;
 }
 .pager {
@@ -370,26 +393,26 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #006f86;
+  border: 1px solid #006f86;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: #808080;
+  color: #666666;
   background-color: #404040;
   cursor: not-allowed;
 }
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #006f86;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #006f86;
 }
 img::selection {
   color: white;
@@ -400,7 +423,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  -webkit-tap-highlight-color: #0085a1;
+  -webkit-tap-highlight-color: #006f86;
 }
 
 .label a {
@@ -424,4 +447,59 @@ div.toc ul {
 
 div.toc ul ul {
   padding-left: 10px;
+}
+
+/* Keep the skip link first in the tab order and above the navigation. */
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 1100;
+  max-width: calc(100% - 24px);
+  padding: 12px 18px;
+  background: #ffffff;
+  color: #404040;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  transform: translateY(calc(-100% - 24px));
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* A light inner ring and dark outer ring work on light and dark surfaces. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+iframe:focus-visible,
+[tabindex]:focus-visible,
+.btn:focus-visible,
+.navbar-toggle:focus-visible {
+  outline: 3px solid #111111;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px #ffffff;
+}
+#main-content {
+  scroll-margin-top: 80px;
+}
+#main-content:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar-custom.is-fixed:focus-within {
+  transform: translate3d(0, 100%, 0);
+}
+.text-muted {
+  color: #666666;
+}
+.badge,
+.label-default {
+  background-color: #666666;
+}
+.label a:hover,
+.label a:focus {
+  color: #ffffff;
+  text-decoration: underline;
 }
