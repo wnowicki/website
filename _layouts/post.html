@@ -81,8 +81,8 @@ layout: default
                 <script type="text/javascript">
                     /* * * CONFIGURATION VARIABLES * * */
                     var disqus_shortname = 'wojciechnowicki';
-                    var disqus_identifier = '{{page.post_id}}';
-                    var disqus_title = '{{page.title}}';
+                    var disqus_identifier = {{ page.post_id | jsonify | replace: '<', '\u003c' }};
+                    var disqus_title = {{ page.title | jsonify | replace: '<', '\u003c' }};
 
                     /* * * DON'T EDIT BELOW THIS LINE * * */
                     (function() {

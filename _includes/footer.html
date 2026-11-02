@@ -7,8 +7,8 @@
                     {% for social in site.social %}
                         {% if social[1].footer == true %}
                             <li>
-                                <a href="{{ social[1].url }}">
-                                    <span class="fa-stack fa-lg">
+                                <a href="{{ social[1].url }}" aria-label="{{ social[0] | replace: 'scholar', 'Google Scholar' | escape }}">
+                                    <span class="fa-stack fa-lg" aria-hidden="true">
                                         <i class="fa-solid fa-circle fa-stack-2x"></i>
                                         <i class="{{ social[1].icon }} fa-stack-1x fa-inverse"></i>
                                     </span>
