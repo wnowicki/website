@@ -503,3 +503,32 @@ iframe:focus-visible,
   color: #ffffff;
   text-decoration: underline;
 }
+
+/* Homepage additions follow the existing typography and Bootstrap grid. */
+.home-hero .home-introduction {
+  max-width: 650px;
+  margin: 25px auto 20px;
+  text-align: center;
+}
+.home-hero .subheading {
+  line-height: 1.4;
+}
+.home-hero-link,
+.home-hero-link:hover,
+.home-hero-link:focus {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.home-content p {
+  text-align: left;
+}
+.home-content h3 {
+  font-size: 22px;
+  line-height: 1.4;
+}
+.home-content section {
+  margin-bottom: 40px;
+}
+.home-content h2 {
+  margin-bottom: 25px;
+}
