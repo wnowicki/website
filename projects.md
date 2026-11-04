@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects - Wojciech Nowicki
-description: Public software projects and contributions by Wojciech Nowicki, including Python tools, PHP libraries and Raspberry Pi experiments.
+description: Public projects and contributions by Wojciech Nowicki, including Python tools, PHP libraries, Raspberry Pi experiments and a Polish-language podcast.
 heading: My Projects
 subheading: Always trying to make things better...
 heading_image: projects.webp
@@ -92,3 +92,9 @@ View on [GitHub](https://github.com/code-bushido/foundation) • [Packagist](htt
 
 - Mac install script [`wnowicki/misc`](https://github.com/wnowicki/misc/blob/master/mac-install.sh)
 - Matlab source: [`wnowicki/matlab`](https://github.com/wnowicki/matlab)
+
+## Podcast (in Polish)
+
+My podcast is currently less active. You can listen to previously published episodes on Spotify.
+
+<iframe title="Wojciech Nowicki's podcast on Spotify (in Polish)" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/63rDHoShb9uyRFW9oBLTBQ?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
