@@ -1,47 +1,50 @@
 ---
 layout: page
 title: About - Wojciech Nowicki
-description: Wojciech Nowicki's professional background in technology leadership, hands-on software engineering, applied AI, academic teaching and research.
+description: Wojciech Nowicki is a hands-on CTO and technology executive combining SaaS engineering, AI product innovation, business leadership, university teaching and startup mentoring.
 heading: About me
-subheading: Technology, leadership and engineering
+subheading: Technology leadership, engineering and education
 heading_image: about.webp
 permalink: /about/
 ---
 
 ## Profile
 
-CTO and technology executive with 15+ years of experience in **software engineering, architecture, and technology leadership**. I combine technology and product strategy for B2B SaaS with hands-on engineering and team development.
+I'm a **hands-on CTO and technology executive with over 15 years of experience** in software engineering, architecture and technology leadership. I combine deep engineering expertise with business leadership, organizational development and product innovation, helping teams build reliable SaaS products that support business growth.
 
-My work includes **applied AI and AI-enabled product development**, supported by an academic teaching and research background. I connect engineering decisions with business needs and help teams develop the skills to build and maintain useful software.
+At IamIP, my work spans technology strategy and delivery alongside executive responsibility for the Polish entity. University teaching, executive education and startup mentoring give me another way to share practical experience, informed by my earlier research in AI and machine learning.
 
 ---
 
 ## Core Competencies
 
-- Leadership & Strategy: Technology Strategy, Engineering Leadership, Team Development, Agile, Scrum, Kanban, Talent Retention, Team Scaling
-- Technical Expertise: Hands-on Software Engineering, OOP, Clean Architecture (PHP, Python), Data Analytics (AWS Lambda, Tableau), Applied AI & Machine Learning, AI-enabled Product Development, Cloud Computing, SQL & NoSQL Databases (MySQL, MongoDB)
-- Business Acumen: Budgeting, Roadmap Development, Product Strategy, Stakeholder Management
-- Technical Tools: Git, Jira, MacOS/Linux, CI/CD, DevOps Practices
+- **Technology & business leadership:** Technology and product strategy, organizational development, team building, budget management and executive decision-making.
+- **Hands-on engineering:** SaaS architecture and scalability, software development in Python and PHP, cloud systems, data platforms and applied AI.
+- **Engineering delivery:** Software quality, CI/CD, maintainability, agile delivery and developing technical and leadership skills within teams.
 
 ---
 
 ## Experience
 
-#### IAMIP Sverige AB – Chief Technology Officer (CTO)
+#### IamIP Sverige AB – Chief Technology Officer (CTO)
 
 *February 2019 – Present*
 
-- **Strategic Leadership:** Defined and executed the company's technical vision, aligning it with business goals. Contributed to product strategy and long-term roadmap.
-- **Team Management:** Scaled and led a cross-functional team, mentoring staff and driving a culture of collaboration. Acted as Managing Director for the Polish entity.
-- **Product Development:** Spearheaded architecture design, improved internal technical standards, and ensured product scalability and quality.
+I built and developed a **cross-functional technology team of 12 people**. Under my leadership, the team transformed an unreliable SaaS platform into a stable system achieving **approximately 99.97% availability**, establishing the technology and engineering foundations for business growth and product scalability.
+
+Together, we delivered AI-powered product capabilities including **AI categorization, AI Claim Clarifier and AI Search**. I remain involved in architecture and engineering while taking responsibility for technology strategy, engineering delivery, organizational development and significant annual technology budgets. I also participate in executive decision-making and investor due diligence processes.
+
+In parallel, as **Managing Director of IamIP's Polish entity**, I oversee financial management, HR, legal and administrative matters, and day-to-day operations. This responsibility connects my technology decisions with the financial, people and operational needs of running a business.
 
 ---
 
-#### West Pomeranian Business School (ZPSB) - Lecturer
+#### West Pomeranian Business School (ZPSB) – Lecturer
 
 *March 2025 – Present*
 
-- Courses: IT Project Management for IT students and AI and company digitalisation for EMBA students.
+I teach AI, software engineering, IT project management and digital transformation, bringing practical engineering and management experience into the classroom. I regularly deliver **executive workshops on AI and digital transformation for Executive MBA students**.
+
+I am also a member of the teaching faculty for the postgraduate programme [Artificial Intelligence in Business and Administration](https://www.zpsb.pl/szczecin/studia-podyplomowe/sztuczna-inteligencja-w-biznesie-i-administracji).
 
 ---
 
@@ -72,6 +75,16 @@ My work includes **applied AI and AI-enabled product development**, supported by
 - Multideco.pl – IT manager (July 2010 – September 2011)
 - Partydeco.pl – webmaster, PHP and MySQL developer (March 2010 – June 2010)
 - Freelancer – webmaster/designer, PHP and MySQL developer (2004 - 2010)
+
+---
+
+## Mentoring & Knowledge Sharing
+
+As a mentor in the [Szczecin_up startup mentoring programme](https://szczecinup.pl/mentorzy-i-doradcy), I advise founders and teams on technology strategy, SaaS products, AI adoption, architecture and engineering leadership.
+
+I share experience through public speaking and host **Hospoda.Tech**, a podcast discussing technology, business, leadership and AI. Previously published episodes are available on the [Projects page]({{ site.baseurl }}/projects/#podcast-in-polish).
+
+My scientific publications below reflect earlier academic research in AI and machine learning, including applications to financial modelling.
 
 ---
 
